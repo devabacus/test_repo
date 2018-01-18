@@ -1016,16 +1016,10 @@ int main(void)
 		while(init_flag == 0);
 		fds_init_values();
 	  fds_get_init_data();
-		//fds_clear();  
-		// U N C O M M E N T 
-		// N E X T 
-    // F U N C T I O N 
-		// B E F O R E   
-		// P R O D U C T I O N
 		test_expired();
 	  start_led();
-
-    // Enter main loop.
+    
+		// Enter main loop.
     for (;;)
     {
 			
