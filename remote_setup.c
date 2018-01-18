@@ -20,10 +20,6 @@ void change_but_level(uint32_t* value)
 						correct(0,0,0);
 						correct_value(*value);  
 						rgb_set(0, 0, 50, 1, 1000);
-//						SEGGER_RTT_printf(0, "2 - %d, percent mode\r\n", *value);
-//						SEGGER_RTT_printf(0, "corr_1_1 - %d \r\n", corr_1_1);
-//						SEGGER_RTT_printf(0, "corr_1_2 - %d \r\n", corr_1_2);
-//						SEGGER_RTT_printf(0, "corr_1_3 - %d \r\n", corr_1_3);
 					}
 					else if (*value > 2000)  // percent correct
 					{
@@ -33,7 +29,6 @@ void change_but_level(uint32_t* value)
 						rgb_set(50, 0, 0, 1, 1000);
 					}
 }
-
 
 void save_corr_values(void)
 {
