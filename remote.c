@@ -320,11 +320,6 @@ void timer_02s_handler(void *p_context)
 		{
 			find_average_adc();
 		}
-		
-		
-		
-		
-	
 }
 
 

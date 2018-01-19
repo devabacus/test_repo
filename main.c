@@ -927,11 +927,10 @@ int main(void)
 		ble_stack_init();
     timers_init();
     power_management_init();
-    //buttons_leds_init(&erase_bonds);
     gpio_init();
 	
 	
-		SEGGER_RTT_printf(0, "start app\n\r");
+		//SEGGER_RTT_printf(0, "start app\n\r");
 		nrf_gpiote();
 
 		pwm_init_corr();
@@ -949,7 +948,7 @@ int main(void)
     services_init();
     conn_params_init();
 
-    NRF_LOG_INFO("Application started\n");
+    //NRF_LOG_INFO("Application started\n");
 
     // Start execution.
     application_timers_start();
