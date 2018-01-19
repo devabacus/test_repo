@@ -84,7 +84,7 @@
 
 
 #define WORK_DAYS_MAX_DEMO	    		 2
-#define WORK_DAYS_MAX_DEMO1			     3
+#define WORK_DAYS_MAX_DEMO1			   100
 #define WORK_DAYS_MAX_DEMO2			   150
 #define WORK_DAYS_MAX_DEMO3			   200
 #define WORK_DAYS_MAX_DEMO4			   350
