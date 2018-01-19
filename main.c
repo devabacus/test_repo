@@ -932,7 +932,7 @@ int main(void)
 	
 		//SEGGER_RTT_printf(0, "start app\n\r");
 		nrf_gpiote();
-
+		SEGGER_RTT_printf(0, "hey man"\n\r");
 		pwm_init_corr();
 		pwm_init_rgb();
 		HX711_init();
@@ -969,15 +969,10 @@ int main(void)
 			
 			Weighing();
 					if(correct_mode == COR_AUTO)
-						//|| (remote_mode == CALL_MODE))
+	
 						{
 							cor_auto_handle();
-//						}
-//					else if (correct_mode == COR_MANUAL) 
-//						{
-//							nrf_gpio_pin_set(HX_SCK);
-//						}
-					
+							
 						}
 			}
 
