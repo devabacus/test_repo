@@ -156,7 +156,7 @@ void correct_value(uint32_t value)
 		}
 	}
 	
-	else if (!activate_status) // EXP_DEMO
+	else if (!activate_status) // EXP_DEMO occured
 	{
 		if(!pin_in4_is_release) // blink 3 times only for correct buttons means that the demo mode is expired
 		{

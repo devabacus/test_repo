@@ -210,9 +210,6 @@ void buttons_handle(void)
 							stop_timer();
 							start_timer(time_feedback);
 						}
-						
-						
-						
 					//SEGGER_RTT_printf(0, "auto %d\n\r", cor_value_auto);	
 			}
 	}
