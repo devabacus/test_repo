@@ -453,9 +453,9 @@ void offset_kg_cor_work()
 			
 			if(remote_mode == WORK_MODE)
 			{
-				SEGGER_RTT_printf(0, "offset_kg_cor_work() for work\n\r");
+				//SEGGER_RTT_printf(0, "offset_kg_cor_work() for work\n\r");
 				correct_value(kg_offset_ar[current_but-1]);
-				SEGGER_RTT_printf(0, "arr[%d] = %d, cur_kg_value = %d\n\r", current_but-1, kg_offset_ar[current_but-1],cur_kg_value);
+				//SEGGER_RTT_printf(0, "arr[%d] = %d, cur_kg_value = %d\n\r", current_but-1, kg_offset_ar[current_but-1],cur_kg_value);
 			}
 			else if (remote_mode == CORR_BUT_MODE)
 			{
@@ -465,7 +465,7 @@ void offset_kg_cor_work()
 					cur_kg_value = kg_offset_ar[corr_mode_button-1];
 					first_setup_entry = 0;
 				}
-				SEGGER_RTT_printf(0, "offset_kg_cor_work() for setting\n\r");
+				//SEGGER_RTT_printf(0, "offset_kg_cor_work() for setting\n\r");
 				debug_display(1);
 				correct_value(cur_kg_value);
 			}
