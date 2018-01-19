@@ -932,7 +932,7 @@ int main(void)
 	
 		//SEGGER_RTT_printf(0, "start app\n\r");
 		nrf_gpiote();
-		SEGGER_RTT_printf(0, "hey man"\n\r");
+		SEGGER_RTT_printf(0, "hey man\n\r");
 		pwm_init_corr();
 		pwm_init_rgb();
 		HX711_init();
@@ -949,7 +949,7 @@ int main(void)
     conn_params_init();
 
     //NRF_LOG_INFO("Application started\n");
-
+		//test comment
     // Start execution.
     application_timers_start();
     advertising_start(erase_bonds);
