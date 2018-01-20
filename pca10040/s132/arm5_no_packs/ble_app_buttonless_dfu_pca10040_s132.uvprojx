@@ -435,14 +435,14 @@
               <FilePath>..\..\..\ble_comm.c</FilePath>
             </File>
             <File>
-              <FileName>device_name.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\device_name.c</FilePath>
-            </File>
-            <File>
               <FileName>offset_perc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\offset_perc.c</FilePath>
+            </File>
+            <File>
+              <FileName>device_name.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\device_name.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -4312,14 +4312,14 @@
               <FilePath>..\..\..\ble_comm.c</FilePath>
             </File>
             <File>
-              <FileName>device_name.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\device_name.c</FilePath>
-            </File>
-            <File>
               <FileName>offset_perc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\offset_perc.c</FilePath>
+            </File>
+            <File>
+              <FileName>device_name.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\device_name.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -923,8 +923,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\device_name.c</PathWithFileName>
-      <FilenameWithoutPath>device_name.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\..\offset_perc.c</PathWithFileName>
+      <FilenameWithoutPath>offset_perc.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -935,8 +935,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\offset_perc.c</PathWithFileName>
-      <FilenameWithoutPath>offset_perc.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\..\device_name.c</PathWithFileName>
+      <FilenameWithoutPath>device_name.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
