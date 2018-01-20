@@ -1,3 +1,4 @@
+#define DEBUG_MODE 1
 
 #include <stdbool.h>
 #include <stdint.h>
@@ -49,6 +50,11 @@
 #include "rgb_led.h"
 #include "ble_comm.h"
 #include "device_name.h"
+
+
+
+
+
 
 
 #define APP_FEATURE_NOT_SUPPORTED       BLE_GATT_STATUS_ATTERR_APP_BEGIN + 2        /**< Reply when unsupported features are requested. */
@@ -277,6 +283,9 @@ static ble_uuid_t m_adv_uuids[] = {{BLE_UUID_DEVICE_INFORMATION_SERVICE, BLE_UUI
 
 
 // YOUR_JOB: Update this code if you want to do anything given a DFU event (optional).
+
+#ifndef DEBUG_MODE
+
 static void ble_dfu_evt_handler(ble_dfu_buttonless_evt_type_t event)
 {
     switch (event)
@@ -313,6 +322,7 @@ static void ble_dfu_evt_handler(ble_dfu_buttonless_evt_type_t event)
     }
 }
 
+#endif
 
 
 /**@brief Callback function for asserts in the SoftDevice.
@@ -472,11 +482,6 @@ static void gap_params_init(void)
     err_code = sd_ble_gap_device_name_set(&sec_mode,
                                           (const uint8_t *)device_name,
                                           strlen(DEVICE_NAME));
-																					
-																					
-																					
-																					
-																					
     APP_ERROR_CHECK(err_code);
 
     /* YOUR_JOB: Use an appearance value matching the application's use case.
@@ -543,6 +548,9 @@ static void nus_data_handler(ble_nus_evt_t * p_evt)
 static void services_init(void)
 {
 			uint32_t err_code;
+	
+#ifndef DEBUG_MODE
+	
     ble_dfu_buttonless_init_t dfus_init =
     {
         .evt_handler = ble_dfu_evt_handler
@@ -555,7 +563,10 @@ static void services_init(void)
 
     err_code = ble_dfu_buttonless_init(&dfus_init);
     APP_ERROR_CHECK(err_code);
-
+#endif
+	
+	
+	
 		
 		ble_nus_init_t nus_init;
     memset(&nus_init, 0, sizeof(nus_init));
@@ -563,7 +574,9 @@ static void services_init(void)
     err_code = ble_nus_init(&m_nus, &nus_init);
     APP_ERROR_CHECK(err_code);
 				
+
 }
+
 
 
 /**@brief Function for handling the Connection Parameters Module.
@@ -930,7 +943,7 @@ int main(void)
     gpio_init();
 	
 	
-		//SEGGER_RTT_printf(0, "start app\n\r");
+		SEGGER_RTT_printf(0, "start app\n\r");
 		nrf_gpiote();
 		SEGGER_RTT_printf(0, "hey man\n\r");
 		pwm_init_corr();

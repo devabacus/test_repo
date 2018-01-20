@@ -72,17 +72,11 @@ void ble_debug(uint8_t * ble_buffer)
 							
 							
 						}
-		
 						
 						if(send_num > 0)
 						{
 							sprintf((char*)ble_string_put, "%d", send_num);
 						}
-						
-						
-						
-						
-		
 		}
 		
 		
