@@ -1,4 +1,4 @@
-device_name.c
+device_name.h
 *.axf
 *.swp
 dfu_steps.*
