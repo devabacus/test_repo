@@ -96,7 +96,6 @@ void fds_evt_handler(fds_evt_t const * const p_fds_evt)
 							{
 									
 							}
-
 				
 				case FDS_EVT_DEL_RECORD:
 						if (p_fds_evt->result == FDS_SUCCESS)
