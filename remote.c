@@ -103,13 +103,8 @@ void test_expired(void)
 		{
 			SEGGER_RTT_printf(0, "exp_subsriber = %d, activate_status = %d\r\n", exp_subsriber, activate_status);	
 		}
-		
 	}
-	
-	
-	
 }
-
 
 void reset_long_press_flags(void)
 {
