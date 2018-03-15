@@ -204,7 +204,7 @@ static void m_clock_timer_init(void)
 {
 	app_timer_init();
 	app_timer_create(&m_clock_id, APP_TIMER_MODE_REPEATED, m_clock_timer_handler); 
-	app_timer_start(m_clock_id, APP_TIMER_TICKS(100), NULL);
+	app_timer_start(m_clock_id, APP_TIMER_TICKS(1000), NULL);
 }
 
 void gpio_init()
