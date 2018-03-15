@@ -1,4 +1,4 @@
-//#define DEBUG_MODE 1
+
 
 #include <stdbool.h>
 #include <stdint.h>
@@ -109,7 +109,7 @@ APP_TIMER_DEF(m_clock_id);
 void clock_value_save(void)
 {
 		life_counter++;
-	//	SEGGER_RTT_printf(0, "life_counter = %d\n\r", life_counter);
+		SEGGER_RTT_printf(0, "l/c= %d\n\r", life_counter);
 		ret_code_t error_code; 
 		if(admin || root)
 		{
@@ -131,7 +131,7 @@ void clock_value_save(void)
 		else if (life_counter % MINUTES_FOR_SAVE == 0)
 		{
 			fds_update_value(&life_counter, file_id_c, fds_rk_clock);
-			//SEGGER_RTT_printf(0, "save life_counter = %d\n\r", life_counter);
+			SEGGER_RTT_printf(0, "save l/c= %d, c/c = %d\n\r", life_counter, fds_clear_counter);
 		}
 	
 		clock_counter = 0;
@@ -974,7 +974,10 @@ int main(void)
 		fds_init_values();
 	  fds_get_init_data();
 		test_expired();
+		//fds_clear();
 	  start_led();
+		
+		
     
 		// Enter main loop.
     for (;;)

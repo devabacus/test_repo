@@ -61,6 +61,9 @@ void ble_debug(uint8_t * ble_buffer)
 								send_num = fds_clear_counter;	
 								break;
 							
+							case 81:
+								send_num = demo1;
+							
 							case 9:
 								//ble_string_put = device_name;
 								memcpy(ble_string_put, device_name, sizeof(device_name));
